@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 3</title>
+    <style>
+        body
+        {
+            font-family: Arial, sans-serif;
+        }
+        header, section, aside, nav, footer
+        {
+            margin: 20px;
+        }
+        table
+        {
+            margin-bottom: 20px;
+        }
+        form
+        {
+            margin-bottom: 40px; /* Adds space between form and next section */
+        }
+        .profile img
+        {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .Kontak
+        {
+            margin-top: 20px;
+        }
+        .Kontak a
+        {
+            margin-right: 15px;
+        }
+        .Kontak img
+        {
+            vertical-align: middle;
+        }
+        aside
+        {
+            clear: both; /* Ensures the aside is not affected by the floating table */
+        }
+        iframe, audio
+        {
+            margin-bottom: 20px;
+        }
+        footer
+        {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="himakom.jpeg" width="50" height="50" alt="Logo Himakom">
+        </div>
+        <h1>Himpunan Ilmu Komputer</h1>
+    </header>
+
+    <section>
+        <article>
+           <p><b>Prodi Ilmu Komputer Universitas Pertamina</b></p> 
+        </article>
+    </section>
+
+    <iframe width="1000" height="500" 
+        src="https://www.youtube.com/embed/sGTasMCDlAE" 
+        title="PRODI ILMU KOMPUTER UNIVERSITAS PERTAMINA" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+
+    <p><b>Whispering Winds Of Hope</b></p>
+    <audio controls loop>
+        <source src="StockTune-Whispering Winds Of Hope_1729048265.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung audio.
+    </audio>
+
+    <p>Silahkan isi data berikut:</p>
+    <form action="#">
+        <table border="2">
+            <tr>
+                <th><label for="name">Nama Lengkap:</label></th>
+                <td><input type="text" name="name" id="name" required></td>
+            </tr>
+            <tr>
+                <th><label for="password">Password:</label></th>
+                <td><input type="password" name="password" id="password" required></td>
+            </tr>
+            <tr>
+                <th><label>Jenis kelamin:</label></th>
+                <td>
+                    <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki" required>
+                    <label for="laki-laki">Laki-laki</label><br>
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+                    <label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="prodi">Program Studi:</label></th>
+                <td>
+                    <select name="prodi" id="prodi" required>
+                        <option value="" disabled selected>Pilih Program Studi</option>
+                        <option value="ilmu komputer">Ilmu Komputer</option>
+                        <option value="kimia">Kimia</option>
+                        <option value="komunikasi">Komunikasi</option>
+                        <option value="manajemen">Manajemen</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="alamat">Alamat:</label></th>
+                <td>
+                    <textarea id="alamat" name="alamat" rows="4" cols="30">Silahkan Isi Alamat</textarea>
+                </td>
+            </tr>
+            <tr>
+                <th><label>Sudah Bayar?</label></th>
+                <td>
+                    <input type="checkbox" id="sudah" name="sudah_bayar" value="Sudah">
+                    <label for="sudah">Sudah</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Kirim">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <aside>
+        <h4>Berita Terkini</h4>
+        <p>Dapatkan informasi terbaru di sini.</p>
+    </aside>
+
+    <nav>
+        <div class="Kontak" style="display: inline;">
+            <a href="https://github.com/athirahtira">
+                <img src="logo_github.png" width="50" height="50" alt="Github">Github
+            </a>
+            <a href="https://www.instagram.com/athirahtira_/">
+                <img src="logo_instagram.png" width="70" height="50" alt="Instagram">Instagram
+            </a>
+            <a href="https://universitaspertamina.ac.id/prodi/ilmu-komputer">
+                <img src="himakom.jpeg" width="50" height="50" alt="Website Himakom">Website
+            </a>
+        </div>       
+    </nav>
+
+    <footer>
+        <p>&copy; 2024. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>
