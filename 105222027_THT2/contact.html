@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0 20px;
+            font-family: 'Calibri', sans-serif;
+            background: linear-gradient(to bottom right, #000000, #000000);
+            color: #ffffff;
+        }
+        .navbar {
+            background-color: #000000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px; /* Memberikan jarak dari kiri dan kanan */
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar ul li a:hover {
+            text-decoration: underline;
+            color: #c98ef7;
+        }
+        .profile {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid #fff;
+            margin-right: 80px; /* Menggeser sedikit ke tengah */
+        }
+        .profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content-section {
+            padding: 80px 20px; /* 80px to compensate for the fixed navbar */
+        }
+        .logo {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 36px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-right: 40px; /* Jarak dari kiri layar */
+        }
+        
+        .contact-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px; /* Memberi jarak antar ikon */
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 2em; /* Ukuran ikon */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #0091ff; /* Efek hover */
+        }
+
+        .social-links span {
+            font-size: 0.8em;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px; /* Ukuran form lebih kecil */
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #1a1a1a; /* Warna abu-abu gelap untuk form */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.8em;
+            color: #fff; /* Warna teks judul */
+        }
+
+        label {
+            font-size: 1em;
+            color: #fff; /* Warna label */
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #555; /* Warna border input */
+            border-radius: 5px;
+            background-color: #333; /* Warna latar input */
+            color: #fff; /* Warna teks input */
+            font-size: 1em;
+        }
+
+        input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
+            color: #ccc; /* Placeholder berwarna abu-abu terang */
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1em;
+            background-color: #00b3b3; /* Warna tombol */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #009999; /* Efek hover untuk tombol */
+        }
+
+        /* Styling untuk kolom Nama */
+        .name-fields {
+            display: flex;
+            gap: 10px;
+        }
+
+        .name-fields input {
+            flex: 1;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">AthirahWeb</div>
+            <ul class="nav-links">
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="profile">
+                <img src="athirah1.jpg" alt="Profile">
+            </div>
+        </nav>
+    </header>
+
+    <h1>Contact</h1>
+    <div class="contact-container">
+        <h1>Contact</h1>
+        <div class="social-links">
+            <a href="https://instagram.com/athirahtira_" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i> 
+                <span>Instagram</span>
+            </a>
+            <a href="https://github.com/athirahtira_" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="https://discord.com/users/athirahtira" target="_blank" title="Discord">
+                <i class="fab fa-discord"></i>
+                <span>Discord</span>
+            </a>
+            <a href="mailto:athirahnaima@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="experience" class="content-section">
+        <div class="container">
+            <h1>Feedback</h1>
+            <form action="#" method="POST">
+                <div class="name-fields">
+                    <div>
+                        <label for="first-name">Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="First" required>
+                    </div>
+                    <div>
+                        <label for="last-name">&nbsp;</label> <!-- Label kosong untuk jarak -->
+                        <input type="text" id="last-name" name="last-name" placeholder="Last" required>
+                    </div>
+                </div>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+    
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+    
+                <label for="message">Comment or Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <p>&copy; 2024 AthirahWeb | All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Pseudo-class for navbar links */
+        .navbar ul li a:hover {
+            color: #c98ef7; /* Color change on hover */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Calibri', sans-serif;
+            background: linear-gradient(to bottom right, #000000, #000000);
+            color: #ffffff;
+        }
+
+        .navbar {
+            background-color: #000000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px; /* Memberikan jarak dari kiri dan kanan */
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar ul li a:hover {
+            text-decoration: underline;
+            color: #c98ef7;
+        }
+        .profile {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid #fff;
+            margin-right: 80px; /* Menggeser sedikit ke tengah */
+        }
+        .profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .logo {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 36px;
+            font-weight: bold;
+            color: #ffffff;
+            flex-shrink: 0;
+        }
+
+        /* Profile section */
+        .profile-about-container {
+            display: flex;
+            justify-content: center; /* Center the container */
+            align-items: center;
+            gap: 20px; /* Space between image and text */
+            margin-top: 120px; /* Adjusted for navbar */
+            padding: 20px 30px;
+        }
+
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center image and social links */
+        }
+
+        .profile-container img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 5px solid #ffffff;
+        }
+
+        /* Video section */
+        .video-section {
+            margin: 0px; /* Added spacing */
+            padding: 0 0px;
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">AthirahWeb</div>
+        <ul class="nav-links">
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            <li><a href="skills.html">SKILLS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="profile">
+            <img src="athirah1.jpg" alt="Profile">
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Video section placed right below the navbar -->
+    <section class="video-section">
+        <h1>My Introduction Video</h1>
+        <video controls>
+            <source src="WELCOME.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <div class="profile-about-container">
+        <div class="profile-container">
+            <img src="athirah1.jpg" alt="Profile Picture">
+        </div>
+        <div class="about-container">
+            <h2 class="name">Athirah Rashida Naima</h2>
+            <p class="role">Front End Developer</p>
+            <h1>About Me</h1>
+            <p>
+                I am a computer <b>science student</b> with a strong passion for data analysis and processing.
+                I enjoy solving complex problems by transforming raw data into meaningful insights that can drive better decision-making.
+                With a solid foundation in programming languages like Python, C++, and web development (HTML & CSS), 
+                I strive to combine technical expertise with a keen interest in finance to innovate at the intersection of technology and financial data.
+            </p>
+        </div>
+    </div>
+</main>
+<hr>
+<footer>
+    <p>&copy; 2024 AthirahWeb | All rights reserved.</p>
+</footer>
+
+</body>
+</html>
